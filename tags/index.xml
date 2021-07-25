@@ -5,6 +5,43 @@
     <link>https://anuran-roy.github.io/tags/</link>
     <description>Recent content in Tags on A Tinkerer&#39;s Canvas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://anuran-roy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Jul 2021 20:43:12 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://anuran-roy.github.io/tags/ai/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nlp</title>
+      <link>https://anuran-roy.github.io/tags/nlp/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nltk</title>
+      <link>https://anuran-roy.github.io/tags/nltk/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/tags/nltk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vosk</title>
+      <link>https://anuran-roy.github.io/tags/vosk/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/tags/vosk/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

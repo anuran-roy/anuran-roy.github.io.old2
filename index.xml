@@ -5,7 +5,8 @@
     <link>https://anuran-roy.github.io/</link>
     <description>Recent content on A Tinkerer&#39;s Canvas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://anuran-roy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Jul 2021 20:43:12 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Other Blogs</title>
       <link>https://anuran-roy.github.io/other-blogs/</link>
@@ -26,6 +27,16 @@ My College Club blogs: 1. CSED VIT: </description>
       
       <guid>https://anuran-roy.github.io/about/</guid>
       <description>Who am I? What do I do? What am I good at?  </description>
+    </item>
+    
+    <item>
+      <title>Offline Speech Recognition with Vosk</title>
+      <link>https://anuran-roy.github.io/post/offline-speech-with-vosk/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/offline-speech-with-vosk/</guid>
+      <description>No more Sphinx The long-lived and long-loved CMU Sphinx, a brainchild of Carnegie Mellon University, is not maintained actively anymore, since 5 years. But does that mean that we need to move to more production-oriented solutions? No, we actually don&amp;rsquo;t. The team CMU Sphinx Project has slowly rolled in a new child project - Vosk.
+Note that there are many other production-oriented solutions available (like OpenVINO, Mozilla DeepSpeech, etc.), which are equally as good, if not better at speech recognition.</description>
     </item>
     
   </channel>
