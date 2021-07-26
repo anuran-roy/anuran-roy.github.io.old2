@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Tinkerer&#39;s Canvas</title>
-    <link>https://anuran-roy.github.io/</link>
-    <description>Recent content on A Tinkerer&#39;s Canvas</description>
+    <title>Tops on A Tinkerer&#39;s Canvas</title>
+    <link>https://anuran-roy.github.io/top/</link>
+    <description>Recent content in Tops on A Tinkerer&#39;s Canvas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jul 2021 03:56:24 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jul 2021 03:56:24 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Other Blogs</title>
       <link>https://anuran-roy.github.io/top/other-blogs/</link>
@@ -29,16 +29,6 @@ My College Club blogs: 1. CSED VIT: </description>
       <description>Who am I? Roy. Anuran Roy. (I like James Bond.) I&amp;rsquo;m a machine that converts coffee to code.
 I am a freshmeat freshman at VIT Vellore. Thanks to the CoVid pandemic and the lockdown it gave us for free, I am still at home, not waiting to go to college.
 In the meantime, I am trying to learn a few stuff (read Web Dev and Competitive Coding :P). This is one such (noobish) example of how much I have developed in web dev :P</description>
-    </item>
-    
-    <item>
-      <title>Offline Speech Recognition with Vosk</title>
-      <link>https://anuran-roy.github.io/post/offline-speech-with-vosk/</link>
-      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
-      
-      <guid>https://anuran-roy.github.io/post/offline-speech-with-vosk/</guid>
-      <description>No more Sphinx The long-lived and long-loved CMU Sphinx, a brainchild of Carnegie Mellon University, is not maintained actively anymore, since 5 years. But does that mean that we need to move to more production-oriented solutions? No, we actually don&amp;rsquo;t. The team CMU Sphinx Project has slowly rolled in a new child project - Vosk.
-Note that there are many other production-oriented solutions available (like OpenVINO, Mozilla DeepSpeech, etc.), which are equally as good, if not better at speech recognition.</description>
     </item>
     
   </channel>
