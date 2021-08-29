@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="A Tinkerer&#39;s Canvas">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://anuran-roy.github.io/images/header.jpeg">
+    <meta property="twitter:image" content="https://anuran-roy.github.io/images/header.jpeg" />
+    
+
+    
+    <meta name="title" content="Machine learning and the Pythonic buzz" />
+    <meta property="og:title" content="Machine learning and the Pythonic buzz" />
+    <meta property="twitter:title" content="Machine learning and the Pythonic buzz" />
+    
+
+    
+    <meta name="description" content="Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data. Sounds too jargon-y? Let me break it up for you!">
+    <meta property="og:description" content="Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data. Sounds too jargon-y? Let me break it up for you!" />
+    <meta property="twitter:description" content="Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data. Sounds too jargon-y? Let me break it up for you!" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Tinker, Tinkerer, Anuran, Roy, Python, Python3, R, MATLAB, Data Science, Machine Learning, ML, Cryptography, Deep Learning, SEO, Blockchain, Django">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Machine learning and the Pythonic buzz-A Tinkerer&#39;s Canvas</title>
+
+    <link rel="canonical" href="/post/machine-learning/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Tinkerer&#39;s Canvas</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/python">python</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/projects/">My Projects</a></li>
+                    
+                        <li><a href="/top/other-blogs/">Other blogs</a></li>
+                    
+                        <li><a href="/documents/cv.pdf">My CV</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/ml-buzz/Illustration2.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/python" title="python">
+                            python
+                        </a>
+                        
+                        <a class="tag" href="/tags/machine-learning" title="machine learning">
+                            machine learning
+                        </a>
+                        
+                        <a class="tag" href="/tags/scikit-learn" title="scikit-learn">
+                            scikit-learn
+                        </a>
+                        
+                        <a class="tag" href="/tags/beginner" title="beginner">
+                            beginner
+                        </a>
+                        
+                    </div>
+                    <h1>Machine learning and the Pythonic buzz</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Anuran
+                         
+                        on 
+                        Sunday, August 29, 2021
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#so-what-is-machine-learning">So what is machine learning?</a></li>
+    <li><a href="#where-does-python-come-in-here">Where does Python come in here?</a></li>
+    <li><a href="#talk-is-cheap-show-me-the-code">Talk is cheap. Show me the code.</a>
+      <ul>
+        <li><a href="#step-1-import-the-tools">Step 1: Import the tools</a></li>
+        <li><a href="#step-2-import-the-data">Step 2: Import the data</a></li>
+        <li><a href="#step-3-initialize-the-model">Step 3: Initialize the model</a></li>
+        <li><a href="#step-4-fit-the-model-with-a-part-of-the-data-well-be-using-the-other-part-to-predict">Step 4: Fit the model with a part of the data (we&rsquo;ll be using the other part to predict</a></li>
+        <li><a href="#step-5-predict-using-the-data">Step 5: Predict using the data</a></li>
+        <li><a href="#step-6-test-the-model">Step 6: Test the model</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+                
+                <p><strong>&ldquo;Predicting the future isn&rsquo;t magic, it&rsquo;s artificial intelligence&rdquo;</strong> ~Dave Waters</p>
+<p>Yes, and <strong>machine learning</strong> is one of the most fascinating aspects of Artificial Intelligence.</p>
+<h2 id="so-what-is-machine-learning">So what is machine learning?</h2>
+<p>Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data.</p>
+<p>Sounds too jargon-y? Let me break it up for you:</p>
+<p>Imagine a situation, where you are one of the decision makers in a business, and you want to increase the company profits for the next quarter, based on various products of your company.</p>
+<p>For a few products and observations, you might predict it manually - by seeing patterns in Data.</p>
+<p>If you&rsquo;re good at statistics, you may prefer to do the aforementioned predictions by working out some metrics to get a more rigorous proof, rather than working solely on your intuition. But we all know that manual can drive you only so far as one or two logs, right?</p>
+<p>This is where machine learning comes to your rescue. It automates all the steps that you&rsquo;ll do while working out the statistical metrics on a larger scale, scaling to hundreds, if not thousands of products, and millions of observations. The end result? Predictions that you can rely on (provided you provided the correct data).</p>
+<p>But this is only one aspect of machine learning. There are many more use cases of machine learning.</p>
+<h2 id="where-does-python-come-in-here">Where does Python come in here?</h2>
+<p>Okay, we can all agree on the fact that we all ABSOLUTELY LOVE Python (which is why you may have stumbled on this website in the first place :P)</p>
+<p>Jokes apart, Python is one of the easiest languages to prototype your ideas. And with its plethora of libraries and frameworks at our ready disposal, it makes our tasks even easier.</p>
+<p>Libraries like <strong>matplotlib</strong> , <strong>scikit-learn</strong> , <strong>numpy</strong> , <strong>pandas</strong> and <strong>scipy</strong> make data visualization, large-scale computation, data manipulation and machine learning accessible like never before. Couple them with interactive environments like <strong>Jupyter notebooks</strong> - you have probably the easiest way to carry out machine learning tasks - it&rsquo;s all upto your creativity now as to what you can do.</p>
+<p>In fact, there&rsquo;s even more you can do, but let&rsquo;s not go overboard :P</p>
+<h2 id="talk-is-cheap-show-me-the-code">Talk is cheap. Show me the code.</h2>
+<p>Okay, enough bantering. So what does a Python Implementation of a machine learning task look like?</p>
+<p>Let&rsquo;s use <strong>scikit-learn</strong> and the <a href="https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html#:~:text=The%20Boston%20Housing%20Dataset,the%20area%20of%20Boston%20Mass.&amp;text=It%20was%20obtained%20from%20the,the%20literature%20to%20benchmark%20algorithms.">Boston dataset</a> for this to predict house prices.</p>
+<p>This dataset consists of the following columns:</p>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture0.png" alt="Dataset Columns">
+
+</p>
+<p>We have to predict either the NOX column, or the MEDV column, given the other columns.</p>
+<p>Consider yourself as a real-estate businessman and enjoy :).</p>
+<h3 id="step-1-import-the-tools">Step 1: Import the tools</h3>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture1.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; from sklearn.tree import DecisionTreeRegressor as dtr
+</code></pre><p>We call scikit-learn as sklearn while importing it.</p>
+<p>We also import numpy, as the data will be in the format of numpy arrays.</p>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture2.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; import numpy as np
+</code></pre><h3 id="step-2-import-the-data">Step 2: Import the data</h3>
+<p>Fortunately, we can use a lot of built-in datasets inside <strong>scikit-learn</strong> itself. So let&rsquo;s import the Boston housing prices dataset.</p>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture3.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; from sklearn.datasets import load_boston
+&gt;&gt;&gt; data = load_boston()
+</code></pre><h3 id="step-3-initialize-the-model">Step 3: Initialize the model</h3>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture7.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; model = dtr()
+</code></pre><h3 id="step-4-fit-the-model-with-a-part-of-the-data-well-be-using-the-other-part-to-predict">Step 4: Fit the model with a part of the data (we&rsquo;ll be using the other part to predict</h3>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture4.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; model.fit(data.data[:400], data.target[:400])
+</code></pre><h3 id="step-5-predict-using-the-data">Step 5: Predict using the data</h3>
+<p>Let us consider the entries in the dataset from 400th index to test:</p>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture5.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; model.predict(data.data[400:])
+</code></pre><h3 id="step-6-test-the-model">Step 6: Test the model</h3>
+<p>Let&rsquo;s see how much the predictions match with the real values:</p>
+<p>
+  <img src="/images/ml-buzz/Screenshots/Picture6.png" alt="">
+
+</p>
+<pre><code>&gt;&gt;&gt; np.isclose(model.predict(data.data[400:]), data.target[400:], atol=5, equal_nan=True)
+</code></pre><p>As we can see, if we set the threshold of error in the predictions to around ±5 (ie., 5000 dollars), most predictions are correct. The ones that aren&rsquo;t, are the outliers in our data (which are very few, as you can see).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Congratulations for building your first machine learning model! As you have seen, machine learning can be a great tool to help you figure out various stuff, which will be tedious if done manually.</p>
+<p>Now that you have built your first machine learning model, you can explore further about concepts like underfitting and overfitting. Google, YouTube (and of course, PyCon) are your friends :)</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/offline-speech-with-vosk/" data-toggle="tooltip" data-placement="top" title="Offline Speech Recognition with Vosk">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-anuran-roy-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="A Tinkerer&#39;s Canvas" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:anuranroy02@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/AnuranRoy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/anuran-roy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/anuran-roy-879668176/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; A Tinkerer&#39;s Canvas 2021
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

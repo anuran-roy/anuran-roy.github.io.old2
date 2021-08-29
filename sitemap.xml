@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://anuran-roy.github.io/</loc>
-    <lastmod>2021-08-18T02:20:07+05:30</lastmod>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/tags/beginner/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/categories/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/tags/machine-learning/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/post/machine-learning/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/post/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/categories/python/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/tags/python/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/tags/scikit-learn/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anuran-roy.github.io/tags/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anuran-roy.github.io/top/projects/</loc>
     <lastmod>2021-08-18T02:20:07+05:30</lastmod>
@@ -20,9 +47,6 @@
     <loc>https://anuran-roy.github.io/tags/ai/</loc>
     <lastmod>2021-07-24T20:43:12+05:30</lastmod>
   </url><url>
-    <loc>https://anuran-roy.github.io/categories/</loc>
-    <lastmod>2021-07-24T20:43:12+05:30</lastmod>
-  </url><url>
     <loc>https://anuran-roy.github.io/tags/nlp/</loc>
     <lastmod>2021-07-24T20:43:12+05:30</lastmod>
   </url><url>
@@ -30,15 +54,6 @@
     <lastmod>2021-07-24T20:43:12+05:30</lastmod>
   </url><url>
     <loc>https://anuran-roy.github.io/post/offline-speech-with-vosk/</loc>
-    <lastmod>2021-07-24T20:43:12+05:30</lastmod>
-  </url><url>
-    <loc>https://anuran-roy.github.io/post/</loc>
-    <lastmod>2021-07-24T20:43:12+05:30</lastmod>
-  </url><url>
-    <loc>https://anuran-roy.github.io/categories/python/</loc>
-    <lastmod>2021-07-24T20:43:12+05:30</lastmod>
-  </url><url>
-    <loc>https://anuran-roy.github.io/tags/</loc>
     <lastmod>2021-07-24T20:43:12+05:30</lastmod>
   </url><url>
     <loc>https://anuran-roy.github.io/tags/vosk/</loc>
