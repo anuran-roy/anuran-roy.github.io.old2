@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="machine learning" />
-    <meta property="og:title" content="machine learning" />
-    <meta property="twitter:title" content="machine learning" />
+    <meta name="title" content="Analyx: The Open Source Plug and Play Python Analytics Library" />
+    <meta property="og:title" content="Analyx: The Open Source Plug and Play Python Analytics Library" />
+    <meta property="twitter:title" content="Analyx: The Open Source Plug and Play Python Analytics Library" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Tinker, Tinkerer, Anuran, Roy, Python, Python3, R, MATLAB, Data Science, Machine Learning, ML, Cryptography, Deep Learning, SEO, Blockchain, Django">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>machine learning-A Tinkerer&#39;s Canvas</title>
+    <title>Analyx: The Open Source Plug and Play Python Analytics Library-A Tinkerer&#39;s Canvas</title>
 
-    <link rel="canonical" href="/tags/machine-learning/">
+    <link rel="canonical" href="/projects/analyx/home/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -158,14 +158,33 @@
 
 
 
-<header class="intro-header" style="background-image: url('/images/header.jpeg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/header.jpeg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>A Tinkerer&#39;s Canvas </h1>
-                    
-		    <span class="subheading">$ sudo apt-get install tinker-dev &amp;&amp; sudo tinker.run()</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Analyx: The Open Source Plug and Play Python Analytics Library</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Anuran
+                         
+                        on 
+                        Saturday, November 20, 2021
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -174,167 +193,151 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
+
+<article>
+    <div class="container">
+        <div class="row">
+
             
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
 
-<div class="post-preview">
-    <a href="https://anuran-roy.github.io/post/machine-learning/">
-        <h2 class="post-title">
-            Machine learning and the Pythonic buzz
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data. Sounds too jargon-y? Let me break it up for you!
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by Anuran Sunday, August 29, 2021
-    
-    
-    </p>
-
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-analyx">What is Analyx?</a></li>
+    <li><a href="#usage">Usage</a></li>
+  </ul>
+</nav>
+                
+                <div class="container row" style="display: flex;flex-direction: row;">
+<a class="btn" href="https://github.com/anuran-roy/analyx/zipball/main">Download as .zip</a>
+<a class="btn" href="https://github.com/anuran-roy/analyx/tarball/main">Download as .tar.gz</a>
+<a class="btn" href="https://github.com/anuran-roy/analyx-python/">View on Github</a>
 </div>
-<hr>
+<div class="container row" style="display: flex;flex-direction: row;">
+    <img src="https://img.shields.io/codacy/grade/905841c62125433ca59068e97b70920e/main?style=for-the-badge" alt="Codacy Code Grade"></img>
+    <img src="https://img.shields.io/github/stars/anuran-roy/analyx-python?style=for-the-badge" alt="Github Stars"></img>
+    <img src="https://img.shields.io/github/forks/anuran-roy/analyx-python?style=for-the-badge" alt="GitHub Forks"></img>
+    <img src="https://img.shields.io/github/repo-size/anuran-roy/analyx-python?style=for-the-badge" alt="GitHub Repo Size"></img>
+    <img src="https://img.shields.io/tokei/lines/github/anuran-roy/analyx-python?style=for-the-badge" alt="Lines of Code"></img>
+</div>
+<h1 id="analyx-python">Analyx-Python</h1>
+<h2 id="what-is-analyx">What is Analyx?</h2>
+<p><strong>Analyx</strong> is a plug-and-play analytics library written in Python.</p>
+<h2 id="usage">Usage</h2>
+<p>Analyx is really easy to integrate with your projects. Here&rsquo;s an example:</p>
+<p>Let&rsquo;s say you want to monitor a method <code>foo()</code> defined as:</p>
+<pre><code>from random import randint
+
+def foo():
+    print(f&quot;Hello world {randint(0,1000000)}!&quot;)
+</code></pre><p>After adding the required lines, the code will look something like this:</p>
+<pre><code>from random import randint
+from metrics.metrics import Metrics
+
+metricman = Metrics(__file__)
+foo_obj = None
+
+def foo():
+    print(f&quot;Hello world {randint(0,1000000)}!&quot;)
+    if foo_obj is None:
+        ep1 = endpoints.Endpoint(endpoint=&quot;/&quot;, id=foo)
+        foo_obj = flow.FlowNode(ep1, name=&quot;Object1&quot;)
+
+    metricman.add_to_analytics(foo_obj, layerName=&quot;foo&quot;)
+</code></pre><p>You can access the metrics of <code>foo()</code> from the <code>metricman</code> object with:</p>
+<pre><code>metricman.display(id='foo')
+</code></pre><p>To get all the metrics of all the methods at once:</p>
+<pre><code>metricman.display()
+</code></pre><p>For looking into what more Analyx can do, head to <code>tests/flow_test.py</code>.</p>
 
 
-            
+                
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-            
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-        </div>
-    </section>
-    
-
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/images/avatar.jpeg" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Sleepy by day, coding by night. Student on weekdays, explorer on weekends.</p>
-            
-           
-           <ul class="list-inline">
-               
-               <li>
-                   <a href='/tags/machine-learning/index.xml' rel="alternate" type="application/rss+xml" title="A Tinkerer&#39;s Canvas" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a href="https://twitter.com/AnuranRoy">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/anuran-roy">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/anuran-roy-879668176/">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-            
-            
-               
-               
-               
-               
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/projects/analyx/overview/" data-toggle="tooltip" data-placement="top" title="Analyx: An Overview">Next
+                            Post &rarr;</a>
+                    </li>
+                    
                 </ul>
+
+                
+<div id="disqus-comment"></div>
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-anuran-roy-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
             </div>
-    </section>
-	
-    
-    
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-    
-    
-</div>
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
 
-	</div>
-</div>
-
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -346,7 +349,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/tags/machine-learning/index.xml' rel="alternate" type="application/rss+xml" title="A Tinkerer&#39;s Canvas" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="A Tinkerer&#39;s Canvas" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
