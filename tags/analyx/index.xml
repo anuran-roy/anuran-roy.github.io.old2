@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analyx on A Tinkerer&#39;s Canvas</title>
+    <link>https://anuran-roy.github.io/tags/analyx/</link>
+    <description>Recent content in analyx on A Tinkerer&#39;s Canvas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 00:33:47 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/tags/analyx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyx: The Open Source Plug and Play Python Analytics Library</title>
+      <link>https://anuran-roy.github.io/post/projects/analyx/</link>
+      <pubDate>Sat, 20 Nov 2021 00:33:47 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/projects/analyx/</guid>
+      <description>Download as .zip Download as .tar.gz View on Github        Analyx-Python What is Analyx? Analyx is a plug-and-play analytics library written in Python.
+Usage Analyx is really easy to integrate with your projects. Here&amp;rsquo;s an example:
+Let&amp;rsquo;s say you want to monitor a method foo() defined as:
+from random import randint def foo(): print(f&amp;quot;Hello world {randint(0,1000000)}!&amp;quot;) After adding the required lines, the code will look something like this:</description>
+    </item>
+    
+  </channel>
+</rss>

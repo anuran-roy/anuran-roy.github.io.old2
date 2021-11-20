@@ -9,15 +9,25 @@
     <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://anuran-roy.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine learning and the Pythonic buzz</title>
-      <link>https://anuran-roy.github.io/post/machine-learning/</link>
+      <link>https://anuran-roy.github.io/post/blog/machine-learning/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://anuran-roy.github.io/post/machine-learning/</guid>
+      <guid>https://anuran-roy.github.io/post/blog/machine-learning/</guid>
       <description>&amp;ldquo;Predicting the future isn&amp;rsquo;t magic, it&amp;rsquo;s artificial intelligence&amp;rdquo; ~Dave Waters
 Yes, and machine learning is one of the most fascinating aspects of Artificial Intelligence.
 So what is machine learning? Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data.
 Sounds too jargon-y? Let me break it up for you:
 Imagine a situation, where you are one of the decision makers in a business, and you want to increase the company profits for the next quarter, based on various products of your company.</description>
+    </item>
+    
+    <item>
+      <title>Offline Speech Recognition with Vosk</title>
+      <link>https://anuran-roy.github.io/post/blog/offline-speech-with-vosk/</link>
+      <pubDate>Sat, 24 Jul 2021 20:43:12 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/blog/offline-speech-with-vosk/</guid>
+      <description>No more Sphinx The long-lived and long-loved CMU Sphinx, a brainchild of Carnegie Mellon University, is not maintained actively anymore, since 5 years. But does that mean that we need to move to more production-oriented solutions? No, we actually don&amp;rsquo;t. The team CMU Sphinx Project has slowly rolled in a new child project - Vosk.
+Note that there are many other production-oriented solutions available (like OpenVINO, Mozilla DeepSpeech, etc.), which are equally as good, if not better at speech recognition.</description>
     </item>
     
   </channel>

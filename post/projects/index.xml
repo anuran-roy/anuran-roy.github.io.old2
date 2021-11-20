@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Tinkerer&#39;s Canvas</title>
+    <link>https://anuran-roy.github.io/post/projects/</link>
+    <description>Recent content on A Tinkerer&#39;s Canvas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 01:33:47 +0530</lastBuildDate><atom:link href="https://anuran-roy.github.io/post/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flow classes in Analyx</title>
+      <link>https://anuran-roy.github.io/post/projects/analyx/flow/</link>
+      <pubDate>Sat, 20 Nov 2021 01:33:47 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/projects/analyx/flow/</guid>
+      <description>Download as .zip Download as .tar.gz View on Github        Introduction The Flow Class objects make the building blocks of Analyx.
+All functions of Analyx are built upon the Flow Objects.
+How do they work? Flow objects are of 3 types:
+ Flow Node Flow Layer Flow Graph  Here, each successive element is a collection of the previous one.
+Anatomy FlowNode() The FlowNode is the basic building block of the entire protocol.</description>
+    </item>
+    
+    <item>
+      <title>Analyx: An Overview</title>
+      <link>https://anuran-roy.github.io/post/projects/analyx/overview/</link>
+      <pubDate>Sat, 20 Nov 2021 01:03:40 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/projects/analyx/overview/</guid>
+      <description>Download as .zip Download as .tar.gz View on Github        How does Analyx work?  (A sample graph visualization)
+ Analyx basically tries to be an opensource plug-&amp;lsquo;n&amp;rsquo;-play python analytics library. It can be extended with various plugins that can be implemented in a manner I&amp;rsquo;ve tried to keep as straightforward as possible.
+Organization The Flow Graph: The backbone Being heavily inspired from Google Analytics, Analyx makes use of graphs to denote the entire flow of control, with each node denoting the function (or object) you want to get metrics of.</description>
+    </item>
+    
+    <item>
+      <title>Analyx: The Open Source Plug and Play Python Analytics Library</title>
+      <link>https://anuran-roy.github.io/post/projects/analyx/home/</link>
+      <pubDate>Sat, 20 Nov 2021 00:33:47 +0530</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/projects/analyx/home/</guid>
+      <description>Download as .zip Download as .tar.gz View on Github        Analyx-Python What is Analyx? Analyx is a plug-and-play analytics library written in Python.
+Usage Analyx is really easy to integrate with your projects. Here&amp;rsquo;s an example:
+Let&amp;rsquo;s say you want to monitor a method foo() defined as:
+from random import randint def foo(): print(f&amp;quot;Hello world {randint(0,1000000)}!&amp;quot;) After adding the required lines, the code will look something like this:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://anuran-roy.github.io/post/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://anuran-roy.github.io/post/projects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

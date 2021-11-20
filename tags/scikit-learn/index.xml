@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://anuran-roy.github.io/tags/scikit-learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine learning and the Pythonic buzz</title>
-      <link>https://anuran-roy.github.io/post/machine-learning/</link>
+      <link>https://anuran-roy.github.io/post/blog/machine-learning/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://anuran-roy.github.io/post/machine-learning/</guid>
+      <guid>https://anuran-roy.github.io/post/blog/machine-learning/</guid>
       <description>&amp;ldquo;Predicting the future isn&amp;rsquo;t magic, it&amp;rsquo;s artificial intelligence&amp;rdquo; ~Dave Waters
 Yes, and machine learning is one of the most fascinating aspects of Artificial Intelligence.
 So what is machine learning? Machine learning leverages the power of statistical modelling to learn patterns in data that can be leveraged to predict outcomes from previously unseen data.
