@@ -21,14 +21,14 @@ Anatomy FlowNode() The FlowNode is the basic building block of the entire protoc
     </item>
     
     <item>
-      <title>Analyx: An Overview</title>
+      <title>Pymetrix: An Overview</title>
       <link>https://anuran-roy.github.io/post/projects/pymetrix/overview/</link>
       <pubDate>Sat, 20 Nov 2021 01:03:40 +0530</pubDate>
       
       <guid>https://anuran-roy.github.io/post/projects/pymetrix/overview/</guid>
-      <description>Download as .zip Download as .tar.gz View on Github        How does Analyx work?  (A sample graph visualization)
- Analyx basically tries to be an opensource plug-&amp;lsquo;n&amp;rsquo;-play python analytics library. It can be extended with various plugins that can be implemented in a manner I&amp;rsquo;ve tried to keep as straightforward as possible.
-Organization The Flow Graph: The backbone Being heavily inspired from Google Analytics, Analyx makes use of graphs to denote the entire flow of control, with each node denoting the function (or object) you want to get metrics of.</description>
+      <description>Download as .zip Download as .tar.gz View on Github        How does Pymetrix work?  (A sample graph visualization)
+ Pymetrix basically tries to be an opensource plug-&amp;lsquo;n&amp;rsquo;-play python analytics library. It can be extended with various plugins that can be implemented in a manner I&amp;rsquo;ve tried to keep as straightforward as possible.
+Organization The Flow Graph: The backbone Being heavily inspired from Google Analytics, Pymetrix makes use of graphs to denote the entire flow of control, with each node denoting the function (or object) you want to get metrics of.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@ Organization The Flow Graph: The backbone Being heavily inspired from Google Ana
       <description>Download as .zip Download as .tar.gz View on Github        Pymetrix-Python What is Pymetrix? Pymetrix is a plug-and-play analytics library written in Python.
 Usage Pymetrix is really easy to integrate with your projects. Here&amp;rsquo;s an example:
 Let&amp;rsquo;s say you want to monitor a method foo() defined as:
-from random import randint def foo(): print(f&amp;quot;Hello world {randint(0,1000000)}!&amp;quot;) After adding the required lines, the code will look something like this:</description>
+from random import randint def foo(): print(f&amp;#34;Hello world {randint(0,1000000)}!&amp;#34;) After adding the required lines, the code will look something like this:</description>
     </item>
     
   </channel>
